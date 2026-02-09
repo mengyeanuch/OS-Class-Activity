@@ -16,7 +16,7 @@ int main() {
     else if (pid == 0) {
         // Child process
         printf("Child process: executing ls command\n");
-        execlp("ls", "ls", NULL);
+        execlp("ls", "ls","-l", NULL);
 
         // If exec fails
         perror("Exec failed");
